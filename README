@@ -1,0 +1,12 @@
+#Criação de estrutura de projeto Django
+django-admin startproject myproject .
+django-admin startapp myapp
+
+
+#criação de usuario
+python manage.py createsuperuser
+
+
+#Frontend
+npm i
+npm create vite@latest
