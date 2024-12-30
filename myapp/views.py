@@ -7,8 +7,8 @@ from rest_framework.decorators import api_view
 @api_view(["GET", "POST"])
 def Viewer(request):
     if request.method == "POST":
-        nome = request.data.get("nome", "Valdvia")
-        sobrenome = request.data.get("sobrenome", "vasco")
+        nome = request.data.get("nome")
+        sobrenome = request.data.get("sobrenome")
         
         # Salvar os dados no banco de dados
         novo_registro = Banco(nome=nome, sobrenome=sobrenome)  # Substitua pelos campos do seu modelo
